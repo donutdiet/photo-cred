@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <header>
+      <h1>© PhotoCred</h1>
+      <p>
+        Add copyright tags to your photos to give proper credit to the
+        photographer. Personalize your tag with custom colors, sizing, and
+        positioning, and download the newly tagged image in just a few clicks!
+      </p>
+      <span>Start by uploading an image 👇</span>
+    </header>
+
+    <main>
+      <section class="image-input-box">
+        <p class="image-upload-prompt">Drag & drop images here or browse</p>
+        <input type="file" class="file" accept="image/*" />
+        <canvas class="image-canvas" style="display: none"></canvas>
+      </section>
+
+      <form class="customization-form">
+        <label for="text">Custom Text:</label>
+        <input
+          type="text"
+          id="text"
+          name="custom-text"
+          placeholder="Enter your text here"
+        />
+
+        <label for="font-size">Font Size (px):</label>
+        <input type="number" id="font-size" name="font-size" placeholder="12" />
+
+        <label for="font-color">Font Color:</label>
+        <input type="color" id="font-color" name="font-color" value="#000000" />
+
+        <label for="background-color">Background Color:</label>
+        <div id="color_wrapper">
+          <input
+            type="color"
+            id="background-color"
+            name="background-color"
+            value="#FFFFFF"
+          />
+          <input
+            id="background-alpha"
+            type="range"
+            min="0"
+            max="255"
+            step="1"
+            value="127"
+          />
+        </div>
+
+        <div class="action-buttons-container">
+          <button class="remove-button" type="button" onclick="">Remove</button>
+          <button class="clear-button" type="button" onclick="">Clear</button>
+        </div>
+        <button class="download-button" type="button" onclick="">
+          <a class="canvas-download-link" href="#" download>Download</a>
+        </button>
+      </form>
+    </main>
+  </body>
+</html>
