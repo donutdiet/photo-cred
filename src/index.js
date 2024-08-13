@@ -2,6 +2,10 @@ import './main.css';
 import { handleImageUpload, removeImage, downloadImage } from './imageHandler';
 import { updateCanvas } from './canvasHandler';
 
+if (process.env.NODE_ENV !== 'production') {
+  console.log('Looks like we are in development mode!');
+}
+
 const imageInput = document.querySelector('.file');
 const canvas = document.querySelector('.image-canvas');
 
