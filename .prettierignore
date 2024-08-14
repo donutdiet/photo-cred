@@ -1,0 +1,10 @@
+dist/
+node_modules/
+
+# Webpack config files
+webpack.common.js
+webpack.prod.js
+webpack.dev.js
+
+# Generated source map (production)
+*.map
