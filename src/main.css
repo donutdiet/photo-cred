@@ -127,12 +127,15 @@ main > .customization-form > input {
   margin-bottom: 12px;
 }
 
-main > .customization-form input[type='text'],
-main > .customization-form input[type='number'] {
+main > .customization-form input {
   height: 28px;
-  padding-left: 4px;
   border: 1px solid black;
   border-radius: 4px;
+}
+
+#text,
+#font-size {
+  padding-left: 4px;
 }
 
 .customization-form > .font-style-container {
