@@ -59,7 +59,7 @@
         photographer. Personalize your tag with custom colors, sizing, and
         positioning, and download the newly tagged image in just a few clicks!
       </p>
-      <span>Start by uploading an image 👇</span>
+      <span>👇 Start by uploading an image</span>
     </header>
 
     <main>
@@ -70,7 +70,7 @@
       </section>
 
       <form class="customization-form">
-        <label for="text">Custom Text:</label>
+        <label for="text"> Image tag: </label>
         <input
           type="text"
           id="text"
@@ -78,11 +78,21 @@
           placeholder="Enter your text here"
         />
 
-        <label for="font-size">Font Size (px):</label>
-        <input type="number" id="font-size" name="font-size" placeholder="12" />
-
-        <label for="font-color">Font Color:</label>
-        <input type="color" id="font-color" name="font-color" value="#000000" />
+        <label for="font-size"> Font Size (px) & Color: </label>
+        <div class="font-style-container">
+          <input
+            type="number"
+            id="font-size"
+            name="font-size"
+            placeholder="12"
+          />
+          <input
+            type="color"
+            id="font-color"
+            name="font-color"
+            value="#000000"
+          />
+        </div>
 
         <label for="background-color">Background Color:</label>
         <div id="color_wrapper">
@@ -108,7 +118,20 @@
         </div>
 
         <button class="download-button" type="button" onclick="">
-          <a class="canvas-download-link" href="#" download>Download</a>
+          <a class="canvas-download-link" href="#" download>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#000000"
+            >
+              <path
+                d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"
+              />
+            </svg>
+            Download
+          </a>
         </button>
       </form>
     </main>

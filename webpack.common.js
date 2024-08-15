@@ -9,7 +9,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: 'PhotoCred',
       template: './src/index.html',
-      favicon: './src/assets/favicon.png',
+      favicon: './src/assets/favicon.jpg',
     }),
   ],
   output: {

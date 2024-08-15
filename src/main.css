@@ -1,5 +1,6 @@
 :root {
   --bg-color: #f5f5dc;
+  --text-dim: #4b5563;
   /* --primary: #086788;
   --secondary: #17b3d6; */
 }
@@ -69,6 +70,7 @@ header > .top-row > nav {
 
 header > p {
   text-align: center;
+  color: var(--text-dim);
 }
 
 header > span {
@@ -89,12 +91,13 @@ main > .image-input-box {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  flex: 1;
   min-height: 400px;
   border-radius: 8px;
   border: 2px dotted black;
   background-position: center;
   background-size: cover;
+  color: var(--text-dim);
 }
 
 main > .image-input-box > .file {
@@ -113,12 +116,35 @@ main > .image-input-box > canvas {
 main > .customization-form {
   display: flex;
   flex-direction: column;
+}
+
+main > .customization-form > label {
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+main > .customization-form > input {
+  margin-bottom: 12px;
+}
+
+main > .customization-form input[type='text'],
+main > .customization-form input[type='number'] {
+  height: 28px;
+  padding-left: 4px;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+
+.customization-form > .font-style-container {
+  display: flex;
   gap: 8px;
+  margin-bottom: 12px;
 }
 
 #color_wrapper {
   background-color: black;
-  display: inline-block;
+  display: flex;
+  gap: 12px;
   visibility: hidden;
 }
 
@@ -148,13 +174,21 @@ main > .customization-form {
 #background-alpha {
   filter: grayscale(100%);
   visibility: visible;
+  flex: 1;
 }
 
-.customization-form > .action-buttons-container {
+.customization-form .action-buttons-container {
   display: flex;
   gap: 8px;
+  margin: 12px 0;
 }
 
-.customization-form > .action-buttons-container > button {
+.customization-form .action-buttons-container > button {
   flex: 1;
+}
+
+.canvas-download-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
