@@ -56,8 +56,8 @@
       </section>
       <p>
         Add copyright tags to your photos to give proper credit to the
-        photographer. Personalize your tag with custom colors, sizing, and
-        positioning, and download the newly tagged image in just a few clicks!
+        photographer. Personalize your tag with custom colors and sizings, and
+        download the newly tagged image in just a few clicks!
       </p>
       <span>👇 Start by uploading an image</span>
     </header>
@@ -70,15 +70,18 @@
       </section>
 
       <form class="customization-form">
-        <label for="text"> Image tag: </label>
-        <input
-          type="text"
-          id="text"
-          name="custom-text"
-          placeholder="Enter your text here"
-        />
+        <label for="text"> Copyright text: </label>
+        <div class="text-input-container">
+          <input
+            type="text"
+            id="text"
+            name="custom-text"
+            placeholder="Enter your text here"
+          />
+          <button class="copyright-button" type="button">©</button>
+        </div>
 
-        <label for="font-size"> Font Size (px) & Color: </label>
+        <label for="font-size"> Font size (px) & color: </label>
         <div class="font-style-container">
           <input
             type="number"
@@ -94,7 +97,7 @@
           />
         </div>
 
-        <label for="background-color">Background Color:</label>
+        <label for="background-color">Background color (RGBA):</label>
         <div id="color_wrapper">
           <input
             type="color"

@@ -7,7 +7,7 @@ function updateCanvas(
   backgroundColor,
   backgroundAlpha,
 ) {
-  const ctx = canvas.getContext("2d");
+  const ctx = canvas.getContext('2d');
   const width = image.width;
   const height = image.height;
 
@@ -15,9 +15,10 @@ function updateCanvas(
   canvas.height = height;
   ctx.drawImage(image, 0, 0);
 
-  const background = `${backgroundColor}${parseInt(backgroundAlpha).toString(16).padStart(2, "0")}`;
+  const background = `${backgroundColor}${parseInt(backgroundAlpha).toString(16).padStart(2, '0')}`;
+
   ctx.font = `${Number(fontSize)}px sans-serif`;
-  ctx.textAlign = "center";
+  ctx.textAlign = 'center';
 
   const textMetrics = ctx.measureText(text);
   const textWidth = textMetrics.width;
@@ -31,7 +32,7 @@ function updateCanvas(
     textHeight,
   );
   ctx.fillStyle = fontColor;
-  ctx.textBaseline = "bottom";
+  ctx.textBaseline = 'bottom';
   ctx.fillText(text, width / 2, height);
 }
 
