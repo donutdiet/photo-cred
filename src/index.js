@@ -73,6 +73,12 @@ copyrightButton.addEventListener('click', () => {
   text.focus();
   updateCanvasWithInputs();
 });
+text.addEventListener('click', () => {
+  if (text.value == '') {
+    text.value += '© ';
+    updateCanvasWithInputs();
+  }
+});
 
 text.addEventListener('input', updateCanvasWithInputs);
 fontSize.addEventListener('input', updateCanvasWithInputs);

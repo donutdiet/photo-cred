@@ -211,3 +211,10 @@ main > .customization-form input {
   justify-content: center;
   align-items: center;
 }
+
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+    margin: 0 8px 24px 8px;
+  }
+}
