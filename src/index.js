@@ -69,7 +69,7 @@ const getUploadedImage = handleImageUpload(
 );
 
 copyrightButton.addEventListener('click', () => {
-  text.value += '©';
+  text.value += '© ';
   text.focus();
   updateCanvasWithInputs();
 });
